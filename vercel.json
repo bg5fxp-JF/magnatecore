@@ -3,7 +3,7 @@
 	"projects": [
 		{
 			"name": "home",
-			"root": "/",
+			"root": "/home",
 			"builds": [
 				{
 					"src": "package.json",
