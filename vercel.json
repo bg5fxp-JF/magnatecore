@@ -1,53 +1,13 @@
 {
 	"version": 2,
-	"projects": [
-		{
-			"name": "home",
-			"root": "/home",
-			"builds": [
-				{
-					"src": "package.json",
-					"use": "@vercel/next"
-				}
-			],
-			"routes": [
-				{
-					"src": "^/(.*)",
-					"dest": "/$1"
-				}
-			]
-		},
-		{
-			"name": "denis",
-			"root": "/denis",
-			"builds": [
-				{
-					"src": "package.json",
-					"use": "@vercel/node"
-				}
-			],
-			"routes": [
-				{
-					"src": "^/denis/(.*)",
-					"dest": "/denis/$1"
-				}
-			]
-		},
-		{
-			"name": "jacob",
-			"root": "/jacob",
-			"builds": [
-				{
-					"src": "package.json",
-					"use": "@vercel/next"
-				}
-			],
-			"routes": [
-				{
-					"src": "^/jacob/(.*)",
-					"dest": "/jacob/$1"
-				}
-			]
-		}
+	"builds": [
+		{ "src": "/home/package.json", "use": "@vercel/next" },
+		{ "src": "/denis/package.json", "use": "@vercel/node" },
+		{ "src": "/jacob/package.json", "use": "@vercel/next" }
+	],
+	"routes": [
+		{ "src": "^/home/(.*)", "dest": "/home/$1" },
+		{ "src": "^/denis/(.*)", "dest": "/denis/$1" },
+		{ "src": "^/jacob/(.*)", "dest": "/jacob/$1" }
 	]
 }
