@@ -1,8 +1,12 @@
 {
 	"rewrites": [
 		{
-			"source": "/jacob/:path*",
-			"destination": "https://www.apple.com/:path*"
+			"source": "/jacob(.*)",
+			"destination": "https://jacob-woad.vercel.app$1"
+		},
+		{
+			"source": "/jacob",
+			"destination": "https://jacob-woad.vercel.app/"
 		},
 		{
 			"source": "/denis/:path*",
