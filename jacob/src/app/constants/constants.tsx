@@ -1,7 +1,7 @@
 export const projData = [
 	{
 		title: "Archie Sharpe",
-		img: "public/images/Archie.png",
+		img: "jacob/public/images/Archie.png",
 		vid: "/videos/Archie.mp4",
 		tech: ["React JS", "Bootstrap CSS"],
 	},
