@@ -3,6 +3,10 @@
 		{
 			"source": "/jacob/:path*",
 			"destination": "https://jacob-woad.vercel.app/:path*"
+		},
+		{
+			"source": "/denis/:path*",
+			"destination": "https://denisk.vercel.app/:path*"
 		}
 	]
 }
