@@ -2,11 +2,11 @@
 	"rewrites": [
 		{
 			"source": "/jacob/:path*",
-			"destination": "https://jacob-woad.vercel.app/:path*"
+			"destination": "https://johannafogel.vercel.app/:path*"
 		},
 		{
 			"source": "/denis/:path*",
-			"destination": "https://denisk.vercel.app/:path*"
+			"destination": "https://joefelix.netlify.app/:path*"
 		}
 	]
 }
