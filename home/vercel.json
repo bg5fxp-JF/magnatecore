@@ -1,16 +1,12 @@
 {
 	"rewrites": [
 		{
-			"source": "/jacob(.*)",
+			"source": "/jacob(/.*)?",
 			"destination": "https://jacob-woad.vercel.app$1"
 		},
 		{
-			"source": "/jacob",
-			"destination": "https://jacob-woad.vercel.app/"
-		},
-		{
-			"source": "/denis/:path*",
-			"destination": "https://heynode.com/:path*"
+			"source": "/denis(/.*)?",
+			"destination": "https://heynode.com$1"
 		}
 	]
 }
