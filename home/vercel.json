@@ -2,7 +2,7 @@
 	"rewrites": [
 		{
 			"source": "/jacob/:path*",
-			"destination": "https://irenenft.vercel.app/:path*"
+			"destination": "https://jacob-woad.vercel.app/:path*"
 		}
 	]
 }
