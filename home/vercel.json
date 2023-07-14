@@ -2,7 +2,7 @@
 	"rewrites": [
 		{
 			"source": "/jacob/:path*",
-			"destination": "https://jf-portfolio.vercel.app/:path*"
+			"destination": "https://heynode.com/tutorial/create-packagejson-file/:path*"
 		}
 	]
 }
