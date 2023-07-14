@@ -2,7 +2,7 @@
 	"rewrites": [
 		{
 			"source": "/jacob/:path*",
-			"destination": "https://johannafogel.vercel.app/:path*"
+			"destination": "https://www.apple.com/:path*"
 		},
 		{
 			"source": "/denis/:path*",
