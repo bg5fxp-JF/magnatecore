@@ -6,7 +6,7 @@
 		},
 		{
 			"source": "/denis/:path*",
-			"destination": "https://app.jointherealworld.com/auth/login:path*"
+			"destination": "https://heynode.com/:path*"
 		}
 	]
 }
