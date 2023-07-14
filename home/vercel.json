@@ -6,7 +6,7 @@
 		},
 		{
 			"source": "/denis/:path*",
-			"destination": "https://joefelix.netlify.app/:path*"
+			"destination": "https://app.jointherealworld.com/auth/login:path*"
 		}
 	]
 }
