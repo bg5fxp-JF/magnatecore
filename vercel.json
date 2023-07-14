@@ -6,7 +6,7 @@
 		{ "src": "/jacob/package.json", "use": "@vercel/next" }
 	],
 	"routes": [
-		{ "src": "^/home/(.*)", "dest": "/home/$1" },
+		{ "src": "^/(.*)", "dest": "/$1" },
 		{ "src": "^/denis/(.*)", "dest": "/denis/$1" },
 		{ "src": "^/jacob/(.*)", "dest": "/jacob/$1" }
 	]
