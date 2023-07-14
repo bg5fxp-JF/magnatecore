@@ -1,0 +1,8 @@
+{
+	"rewrites": [
+		{
+			"source": "/jacob/:path*",
+			"destination": "https://jf-portfolio.vercel.app/:path*"
+		}
+	]
+}
