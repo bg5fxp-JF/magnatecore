@@ -17,7 +17,7 @@ export default async function ContactAPI(req, res) {
 		secure: true,
 		auth: {
 			user: user,
-			pass: "pkrykcmztbygbdxu",
+			pass: process.env.PASS,
 		},
 	});
 
