@@ -2,16 +2,16 @@ export const servicesData = [
 	{
 		link: "",
 		name: "AI Automation",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus reiciendis rerum optio itaque aperiam magni nisi numquam fugiat voluptates rem? Labore aspernatur ex aperiam, quasi alias sapiente repellendus consequatur velit.",
+		desc: "Elevate your business efficiency with our AI solutions, tailored to streamline operations and enhance decision-making.",
 	},
 	{
 		link: "",
 		name: "Copywriting",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus reiciendis rerum optio itaque aperiam magni nisi numquam fugiat voluptates rem? Labore aspernatur ex aperiam, quasi alias sapiente repellendus consequatur velit.",
+		desc: "Our seasoned copywriters craft captivating narratives, turning your brand's essence into powerful messages that resonate.",
 	},
 	{
 		link: "",
 		name: "Website Design",
-		desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus reiciendis rerum optio itaque aperiam magni nisi numquam fugiat voluptates rem? Labore aspernatur ex aperiam, quasi alias sapiente repellendus consequatur velit.",
+		desc: "Merging aesthetics with functionality, we sculpt digital landscapes that not only captivate but also drive user engagement",
 	},
 ];

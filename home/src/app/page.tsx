@@ -6,19 +6,19 @@ import { ContactForm } from "./components/ContactForm";
 export default function Home() {
 	return (
 		<div className="h-screen overflow-auto snap snap-y snap-mandatory">
-			<section className="snap-start flex min-h-screen flex-col items-center  py-14 px-10 md:px-24 ">
+			<section className="md:snap-start flex min-h-screen flex-col items-center  py-10 px-10 md:px-24 ">
 				<Navbar />
 				<AnimationMain />
 			</section>
 			<section
 				id="services"
-				className="snap-start flex min-h-screen   flex-col items-center  py-14 px-10 md:px-24 "
+				className="md:snap-start flex min-h-screen   flex-col items-center  py-14 px-10 md:px-24 "
 			>
 				<Services />
 			</section>
 			<section
 				id="contact"
-				className="snap-start flex min-h-screen   flex-col items-center  py-14 px-10 md:px-24 "
+				className="md:snap-start flex min-h-screen   flex-col items-center  py-14 px-10 md:px-24 "
 			>
 				<ContactForm />
 			</section>

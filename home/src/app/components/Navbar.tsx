@@ -15,7 +15,7 @@ export default function Navbar() {
 		<nav className="relative w-full mx-auto ">
 			<div className="flex items-center justify-between  text-shadow shadow-black">
 				<Link href="/">
-					<img src="images/icon2.png" className="w-40" alt="" />
+					<img src="images/icon2.png" className=" w-24" alt="" />
 				</Link>
 
 				<div className="hidden space-x-12 md:flex">
@@ -25,7 +25,7 @@ export default function Navbar() {
 								const element = document.getElementById("services");
 								if (element) element.scrollIntoView({ behavior: "smooth" });
 							}}
-							className="font-Fredoka transition duration-300 ease-in-out  rounded-full  transform hover:scale-125 cursor-pointer"
+							className="font-Roboto transition duration-300 ease-in-out  rounded-full  transform hover:scale-110 cursor-pointer"
 						>
 							Our Services
 						</p>
@@ -34,7 +34,7 @@ export default function Navbar() {
 								const element = document.getElementById("contact");
 								if (element) element.scrollIntoView({ behavior: "smooth" });
 							}}
-							className="font-Fredoka transition duration-300 ease-in-out  rounded-full  transform hover:scale-125 cursor-pointer"
+							className="font-Roboto transition duration-300 ease-in-out  rounded-full  transform hover:scale-110 cursor-pointer"
 						>
 							Contact Us
 						</p>
