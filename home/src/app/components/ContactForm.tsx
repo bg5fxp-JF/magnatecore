@@ -36,12 +36,14 @@ export const ContactForm = () => {
 
 	return (
 		<div className="flex flex-col items-center justify-center text-center">
-			<h1 className="font-Roboto text-8xl md:text-10xl ">Contact Us</h1>
+			<h1 className="font-Poppins text-8xl md:text-9xl lg:text-10xl ">
+				Contact Us
+			</h1>
 
 			<form className="flex mt-10 flex-col space-y-10" onSubmit={handleSubmit}>
 				<input
 					type="text"
-					className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+					className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:outline-none focus:ring-0"
 					placeholder="Name"
 					value={name}
 					onChange={(e) => setName(e.target.value)}
@@ -49,7 +51,7 @@ export const ContactForm = () => {
 				/>
 				<input
 					type="email"
-					className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+					className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:outline-none focus:ring-0"
 					placeholder="Email"
 					value={email}
 					onChange={(e) => setEmail(e.target.value)}
@@ -70,7 +72,7 @@ export const ContactForm = () => {
 							/>
 							<label
 								htmlFor="ai-automation"
-								className="shadow inline-flex items-center justify-between w-full  p-1  text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+								className="relative inline-flex items-center justify-between w-full  text-gray-500 cursor-pointer hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 peer-checked:text-black dark:peer-checked:text-black"
 							>
 								<div className="block mx-auto">
 									<div className="w-full text-xsm md:text-lg font-semibold">
@@ -91,13 +93,14 @@ export const ContactForm = () => {
 							/>
 							<label
 								htmlFor="copywriting"
-								className="shadow inline-flex items-center justify-between w-full  p-1  text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+								className="relative inline-flex items-center justify-between w-full  text-gray-500 cursor-pointer hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 peer-checked:text-black dark:peer-checked:text-black"
 							>
 								<div className="block mx-auto">
 									<div className="w-full text-xsm md:text-lg font-semibold">
 										Copywriting
 									</div>
 								</div>
+								<div className="absolute inset-x-0 bottom-0 h-1 bg-transparent transform scale-x-0 origin-center border-b-2 border-transparent peer-checked:border-black dark:peer-checked:border-black transition-transform"></div>
 							</label>
 						</li>
 
@@ -113,7 +116,7 @@ export const ContactForm = () => {
 							/>
 							<label
 								htmlFor="website-design"
-								className="shadow inline-flex items-center justify-between w-full p-1  text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-black peer-checked:border-black peer-checked:text-black hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700"
+								className="relative inline-flex items-center justify-between w-full  text-gray-500 cursor-pointer hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 peer-checked:text-black dark:peer-checked:text-black"
 							>
 								<div className="block mx-auto">
 									<div className="w-full text-xsm md:text-lg font-semibold">
@@ -125,7 +128,7 @@ export const ContactForm = () => {
 					</ul>
 				</div>
 				<textarea
-					className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+					className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:outline-none focus:ring-0"
 					placeholder="Message"
 					value={message}
 					onChange={(e) => setMessage(e.target.value)}
