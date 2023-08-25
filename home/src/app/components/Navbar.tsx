@@ -12,30 +12,43 @@ export default function Navbar() {
 	}
 
 	return (
-		<nav className="relative w-full mx-auto ">
-			<div className="flex items-center justify-between md:justify-around  text-shadow shadow-black">
-				<p
-					onClick={() => {
-						const element = document.getElementById("services");
-						if (element) element.scrollIntoView({ behavior: "smooth" });
-					}}
-					className="hidden md:flex font-Poppins transition duration-300 ease-in-out  rounded-full  transform hover:scale-110 cursor-pointer"
-				>
-					Our Services
-				</p>
+		<nav className="relative w-full  ">
+			<div className="flex items-center justify-between  text-shadow shadow-black">
 				<Link href="/">
-					<img src="images/icon2.png" className="w-24 md:w-40" alt="" />
-					{/* <h1 className=" font-bold font-Poppins text-10xl">MC</h1> */}
+					<div className="flex items-center">
+						<img src="images/icon4.png" className=" w-11" alt="" />
+						{/* <h1 className=" font-Montserrat font-bold text-4xl ">
+							M
+							<span className="font-Poppins font-normal text-reg ">agnate</span>
+						</h1>
+						<h1 className=" font-Montserrat font-bold text-4xl ml-1 ">
+							C<span className="font-Poppins font-normal text-reg ">ore</span>
+						</h1> */}
+						{/* <p className="font-Poppins font-normal text-reg ml-1 ">agnate</p> */}
+						<img src="images/icon5.png" className=" w-10  " alt="" />
+						{/* <p className="font-Poppins  font-normal text-reg  ">ore</p> */}
+					</div>
 				</Link>
-				<p
-					onClick={() => {
-						const element = document.getElementById("contact");
-						if (element) element.scrollIntoView({ behavior: "smooth" });
-					}}
-					className="hidden md:flex font-Poppins transition duration-300 ease-in-out  rounded-full  transform hover:scale-110 cursor-pointer"
-				>
-					Contact Us
-				</p>
+				<div className="flex items-center gap-x-10">
+					<p
+						onClick={() => {
+							const element = document.getElementById("services");
+							if (element) element.scrollIntoView({ behavior: "smooth" });
+						}}
+						className="hidden md:flex font-normal text-reg font-Poppins transition duration-300 ease-in-out  rounded-full  transform hover:scale-110 cursor-pointer"
+					>
+						Our Services
+					</p>
+					<p
+						onClick={() => {
+							const element = document.getElementById("contact");
+							if (element) element.scrollIntoView({ behavior: "smooth" });
+						}}
+						className="hidden md:flex  font-normal text-reg font-Poppins transition duration-300 ease-in-out  rounded-full  transform hover:scale-110 cursor-pointer"
+					>
+						Contact Us
+					</p>
+				</div>
 
 				<button
 					id="menu-btn"

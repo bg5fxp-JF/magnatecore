@@ -33,6 +33,13 @@ export const slideInFromBottom = {
 	exit: { y: "100%" },
 };
 
+// Fade in from bottom
+export const fadeInFromBottom = {
+	hidden: { y: "100%", opacity: 0 },
+	visible: { y: 0, opacity: 1 },
+	exit: { y: "100%", opacity: 0 },
+};
+
 // Scale up and down
 export const scaleUpDown = {
 	hidden: { scale: 0 },
@@ -58,5 +65,27 @@ export const bounceInFromTop = {
 	visible: {
 		y: ["-50%", "0%", "-10%", "0%"],
 		opacity: 1,
+	},
+};
+
+export const slideUp = {
+	initial: {
+		top: 0,
+	},
+	exit: {
+		top: "-100vh",
+		transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
+	},
+};
+
+export const slideDiagonal = {
+	initial: {
+		x: 0,
+		y: 0,
+	},
+	exit: {
+		x: "150vh", // Using a large value to ensure the element exits the viewport
+		y: "150vh", // Negative to move upwards
+		transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
 	},
 };

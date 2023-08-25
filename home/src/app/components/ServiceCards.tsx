@@ -2,16 +2,11 @@ export default function ServiceCards({ link, name, desc }: any) {
 	return (
 		<a
 			href={link}
-			className=" h-52 flex justify-center items-center flex-col group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:bg-opacity-50  hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+			className=" cursor-default h-52 flex justify-center items-center flex-col group rounded-lg border border-transparent px-5 py-4 transition-colors border-gray-300 bg-gray-100 bg-opacity-50  dark:border-neutral-700 dark:bg-neutral-800/30"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
-			<h2 className={`mb-3 text-2xl font-semibold`}>
-				{name}{" "}
-				<span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-					-&gt;
-				</span>
-			</h2>
+			<h2 className={`mb-3 text-2xl font-semibold`}>{name}</h2>
 			<p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{desc}</p>
 		</a>
 	);

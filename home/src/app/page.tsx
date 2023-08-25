@@ -1,12 +1,30 @@
+"use client";
+import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import AnimationMain from "./components/AnimationMain";
 import Services from "./components/Services";
 import { ContactForm } from "./components/ContactForm";
+import Preloader from "./components/preloader/Preloader";
+import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
+	const [isLoading, setIsLoading] = useState(true);
+
+	useEffect(() => {
+		(async () => {
+			setTimeout(() => {
+				setIsLoading(false);
+				document.body.style.cursor = "default";
+				window.scrollTo(0, 0);
+			}, 2000);
+		})();
+	}, []);
 	return (
 		<div className="h-screen overflow-auto snap snap-y snap-mandatory">
-			<section className="md:snap-start flex min-h-screen flex-col items-center  py-10 px-10 md:px-24 ">
+			<AnimatePresence mode="wait">
+				{isLoading && <Preloader />}
+			</AnimatePresence>
+			<section className="bg md:snap-start flex min-h-screen flex-col items-center gap-y-24  py-10 px-10 md:px-24 ">
 				<Navbar />
 				<AnimationMain />
 			</section>
