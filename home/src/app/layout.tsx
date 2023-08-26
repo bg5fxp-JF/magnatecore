@@ -16,7 +16,14 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>{children}</body>
+			<body className={inter.className}>
+				<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+				<script
+					src="https://mediafiles.botpress.cloud/fb3dd301-596d-4403-8522-6aa896d55f92/webchat/config.js"
+					defer
+				></script>
+				{children}
+			</body>
 		</html>
 	);
 }
