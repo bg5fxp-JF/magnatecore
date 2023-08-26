@@ -35,10 +35,8 @@ export const ContactForm = () => {
 	};
 
 	return (
-		<div className="flex flex-col items-center justify-center text-center">
-			<h1 className="font-Poppins text-6xl xs:text-8xl md:text-9xl lg:text-10xl ">
-				Contact Us
-			</h1>
+		<div className="flex flex-col items-center justify-center text-center font-Poppins">
+			<h1 className=" text-6xl xs:text-8xl  ">Contact Us</h1>
 
 			<form
 				className="flex w-full md:w-[500px] rounded-lg border border-transparent  mt-10 flex-col space-y-10 border-gray-300 bg-gray-100 bg-opacity-50 p-5"
@@ -52,49 +50,31 @@ export const ContactForm = () => {
 					onChange={(e) => setName(e.target.value)}
 					required
 				/>
-				<div className="flex justify-around   p-1">
-					<div>
-						<input
-							type="radio"
-							id="ai-automation"
-							value="Ai Automation"
-							checked={service === "Ai Automation"}
-							onChange={(e) => setService(e.target.value)}
-							className="hidden peer"
-							required
-						/>
-						<label
-							htmlFor="ai-automation"
-							className="relative inline-flex items-center justify-between w-full  text-gray-500 cursor-pointer hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 peer-checked:text-black dark:peer-checked:text-black"
-						>
-							<div className="block mx-auto">
-								<div className="w-full text-xsm md:text-lg ">AI Automation</div>
-							</div>
-						</label>
-					</div>
-					<div className=" border-x-[0.5px] border-gray-500"></div>
 
-					<div>
-						<input
-							type="radio"
-							id="copywriting"
-							value="Copywriting"
-							checked={service === "Copywriting"}
-							onChange={(e) => setService(e.target.value)}
-							className="hidden peer"
-							required
-						/>
-						<label
-							htmlFor="copywriting"
-							className="relative inline-flex items-center justify-between w-full  text-gray-500 cursor-pointer hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300 peer-checked:text-black dark:peer-checked:text-black"
+				<div className="relative">
+					<select
+						value={service}
+						onChange={(e) => setService(e.target.value)}
+						className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:outline-none focus:ring-0"
+						required
+					>
+						<option value="" disabled selected>
+							Select a service
+						</option>
+						<option value="Ai Automation">AI Automation</option>
+						<option value="Copywriting">Copywriting</option>
+					</select>
+					<div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+						<svg
+							className="w-4 h-4 fill-current"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 20 20"
 						>
-							<div className="block mx-auto">
-								<div className="w-full text-xsm md:text-lg ">Copywriting</div>
-							</div>
-							<div className="absolute inset-x-0 bottom-0 h-1 bg-transparent transform scale-x-0 origin-center border-b-2 border-transparent peer-checked:border-black dark:peer-checked:border-black transition-transform"></div>
-						</label>
+							<path d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" />
+						</svg>
 					</div>
 				</div>
+
 				<input
 					type="email"
 					className="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:outline-none focus:ring-0"

@@ -6,6 +6,8 @@ import Services from "./components/Services";
 import { ContactForm } from "./components/ContactForm";
 import Preloader from "./components/preloader/Preloader";
 import { AnimatePresence } from "framer-motion";
+import HScroll from "./components/hscroll/HScroll";
+import HScroll1 from "./components/hscroll/HScroll1";
 
 export default function Home() {
 	const [isLoading, setIsLoading] = useState(true);
@@ -20,23 +22,25 @@ export default function Home() {
 		})();
 	}, []);
 	return (
-		<div className="h-screen overflow-auto snap snap-y snap-mandatory">
+		<div className=" font-Poppins h-screen ">
 			<AnimatePresence mode="wait">
 				{isLoading && <Preloader />}
 			</AnimatePresence>
-			<section className="bg md:snap-start flex min-h-screen flex-col items-center gap-y-24  py-10 px-10 md:px-24 ">
+			<section className="  flex min-h-screen flex-col text-center xls:text-left items-center gap-y-12  py-10 px-10 md:px-24 ">
 				<Navbar />
 				<AnimationMain />
 			</section>
+			<HScroll />
 			<section
 				id="services"
-				className="md:snap-start flex min-h-screen   flex-col items-center  py-14 px-10 md:px-24 "
+				className=" flex min-h-screen   flex-col items-center  py-14 px-10 md:px-24 "
 			>
 				<Services />
 			</section>
+			<HScroll1 />
 			<section
 				id="contact"
-				className="md:snap-start flex min-h-screen   flex-col items-center  py-14 px-10 md:px-24 "
+				className="flex min-h-screen  flex-col items-center  py-14 px-10 md:px-24 "
 			>
 				<ContactForm />
 			</section>
