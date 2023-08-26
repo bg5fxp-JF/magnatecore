@@ -95,7 +95,7 @@ export const ContactForm = () => {
 
 				<button
 					type="submit"
-					className="bg-black shadow w-full md:w-[30%] mx-auto text-white p-2 rounded"
+					className="bg-black shadow w-full md:w-[30%] mx-auto text-white p-2 rounded-full"
 				>
 					Send
 				</button>
