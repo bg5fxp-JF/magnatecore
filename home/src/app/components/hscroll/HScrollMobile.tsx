@@ -7,7 +7,7 @@ import AnimateBlock from "../AnimateBlock";
 import ImgText from "../ImgText";
 import { ctaData } from "@/app/constants/constatnts";
 
-export default function HScroll() {
+export default function HScrollMobile() {
 	const sectionRef = useRef(null);
 	const triggerRef = useRef(null);
 
@@ -20,7 +20,7 @@ export default function HScroll() {
 				translateX: 0,
 			},
 			{
-				translateX: "-65vw",
+				translateX: "-200vw",
 				ease: "none",
 				duration: 1,
 				scrollTrigger: {
@@ -49,9 +49,9 @@ export default function HScroll() {
 						({ side, title, desc, img, btn, btnTitle, btnSub }: any) => {
 							return (
 								<AnimateBlock>
-									<div className="flex items-center justify-center h-screen w-screen md:w-[50vw]">
+									<div className="flex items-center justify-center h-screen w-screen">
 										<ImgText
-											side="left"
+											side={side}
 											img={img}
 											title={title}
 											desc={desc}

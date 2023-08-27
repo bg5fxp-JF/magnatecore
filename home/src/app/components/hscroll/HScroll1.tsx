@@ -20,7 +20,7 @@ export default function HScroll1() {
 				translateX: 0,
 			},
 			{
-				translateX: "-300vw",
+				translateX: "-65vw",
 				ease: "none",
 				duration: 1,
 				scrollTrigger: {
@@ -43,22 +43,27 @@ export default function HScroll1() {
 			<div ref={triggerRef}>
 				<div
 					ref={sectionRef}
-					className="min-h-screen flex flex-row relative w-[400vw]"
+					className="min-h-screen flex flex-row relative w-[400vw]  md:px-20"
 				>
-					{ctaData2.map(({ oreintation, title, desc, img }: any) => {
-						return (
-							<AnimateBlock>
-								<div className="flex items-center justify-center h-screen w-screen">
-									<ImgText
-										oreintation={oreintation}
-										img={img}
-										title={title}
-										desc={desc}
-									/>
-								</div>
-							</AnimateBlock>
-						);
-					})}
+					{ctaData2.map(
+						({ side, title, desc, img, btn, btnTitle, btnSub }: any) => {
+							return (
+								<AnimateBlock>
+									<div className="flex items-center justify-center h-screen w-screen md:w-[50vw]">
+										<ImgText
+											side="left"
+											img={img}
+											title={title}
+											desc={desc}
+											btn={btn}
+											btnTitle={btnTitle}
+											btnSub={btnSub}
+										/>
+									</div>
+								</AnimateBlock>
+							);
+						}
+					)}
 				</div>
 			</div>
 		</section>
