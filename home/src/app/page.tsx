@@ -48,7 +48,7 @@ export default function Home() {
 				<Navbar />
 				<AnimationMain />
 			</section>
-			{isBelow768 ? <HScrollMobile /> : <HScroll />}
+			<HScrollMobile />
 
 			<section
 				id="services"
@@ -56,7 +56,7 @@ export default function Home() {
 			>
 				<Services />
 			</section>
-			{isBelow768 ? <HScroll1Mobile /> : <HScroll1 />}
+			<HScroll1Mobile />
 
 			<section
 				id="contact"
