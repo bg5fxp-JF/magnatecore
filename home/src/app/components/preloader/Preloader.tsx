@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { slideDiagonal, fadeInOut } from "../../utils/motion";
+import { fadeInOut } from "../../utils/motion";
 
 export default function Preloader() {
 	return (
 		<>
 			<motion.div
-				variants={slideDiagonal}
+				variants={fadeInOut}
 				initial="initial"
 				exit="exit"
 				className="h-[100vh] w-[100vw] fixed top-0 left-0 z-50 text-white flex items-center justify-center bg-black"

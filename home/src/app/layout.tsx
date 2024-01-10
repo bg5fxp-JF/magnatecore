@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -22,6 +23,7 @@ export default function RootLayout({
 					src="https://mediafiles.botpress.cloud/fb3dd301-596d-4403-8522-6aa896d55f92/webchat/config.js"
 					defer
 				></script>
+				<Navbar />
 				{children}
 			</body>
 		</html>

@@ -4,18 +4,29 @@ import ServiceCards from "./ServiceCards";
 
 export default function Services() {
 	return (
-		<div className="flex flex-col items-center gap-y-16 justify-center text-center">
-			<h1 className="font-Poppins text-6xl xs:text-8xl ">Our Services</h1>
-			{/* <div className="w-[30%] h-1  bg-black mt-1  shadow-sm"></div> */}
-			<div className=" container mx-auto p-6 grid grid-cols-1 md:grid-cols-2  lg:mt-10  gap-5  justify-center items-center  ">
-				{servicesData.map(({ link, name, desc }: any) => {
-					return (
-						<AnimateBlock>
-							<ServiceCards link={link} name={name} desc={desc} />
-						</AnimateBlock>
-					);
-				})}
+		<section
+			id="services"
+			className=" flex min-h-screen   flex-col items-center  py-14 px-10 md:px-24 "
+		>
+			<div className="flex flex-col items-center justify-center gap-y-10 text-center">
+				<div className="flex flex-col gap-y-2">
+					<h1 className="font-Poppins text-sm font-light">Our Services</h1>
+					<h1 className="font-Poppins text-4xl md:text-6xl font-bold ">
+						Design that solves problems, one product at a time.
+					</h1>
+				</div>
+				{/* <div className="w-[30%] h-1  bg-black mt-1  shadow-sm"></div> */}
+				{/* <div className=" container mx-auto p-6 grid grid-cols-1 md:grid-cols-2  lg:mt-10  gap-5  justify-center items-center  "> */}
+				<div className=" flex flex-wrap container mx-auto p-6  gap-5 justify-center  items-start  ">
+					{servicesData.map(({ link, name, desc, icon }: any) => {
+						return (
+							<AnimateBlock>
+								<ServiceCards link={link} name={name} desc={desc} icon={icon} />
+							</AnimateBlock>
+						);
+					})}
+				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

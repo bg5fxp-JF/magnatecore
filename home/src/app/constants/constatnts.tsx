@@ -3,26 +3,32 @@ export const servicesData = [
 		link: "",
 		name: "Strategic Digital Alliance",
 		desc: "Beyond a service provider, we position ourselves as your strategic ally in the digital ascent.",
+
+		icon: "trend",
 	},
 	{
 		link: "",
 		name: "Engaging Digital Instruments",
 		desc: "Interact with our ROI estimator and digital growth evaluator for actionable insights. Master the art of maximising returns on every digital expenditure.",
+		icon: "calculator",
 	},
 	{
 		link: "",
 		name: "AI-Infused Content Generation",
 		desc: "Leverage AI's prowess for content that not only speaks but resonates.",
+		icon: "robot",
 	},
 	{
 		link: "",
 		name: "Customised Game Plans",
 		desc: "Precision-crafted strategies, tailored for your brand's unique trajectory.",
+		icon: "strategy",
 	},
 	{
 		link: "",
 		name: "Digital Brand Augmentation",
 		desc: "Amplify your brand's digital footprint and charisma.",
+		icon: "footprint",
 	},
 ];
 export const ctaData = [

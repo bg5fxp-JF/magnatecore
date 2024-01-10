@@ -40,30 +40,20 @@ export default function Home() {
 		})();
 	}, []);
 	return (
-		<div className=" font-Poppins h-screen ">
+		<main className=" font-Poppins h-screen ">
 			<AnimatePresence mode="wait">
 				{isLoading && <Preloader />}
 			</AnimatePresence>
-			<section className="  flex min-h-screen flex-col text-center xls:text-left items-center gap-y-12  py-10 px-10 md:px-24 ">
-				<Navbar />
+			<section className="flex min-h-screen flex-col text-center xls:text-left items-center gap-y-12  py-10 px-10 md:px-24 ">
 				<AnimationMain />
 			</section>
 			{isBelow768 ? <HScrollMobile /> : <HScroll />}
 
-			<section
-				id="services"
-				className=" flex min-h-screen   flex-col items-center  py-14 px-10 md:px-24 "
-			>
-				<Services />
-			</section>
+			<Services />
+
 			{isBelow768 ? <HScroll1Mobile /> : <HScroll1 />}
 
-			<section
-				id="contact"
-				className="flex min-h-screen  flex-col items-center  py-14 px-10 md:px-24 "
-			>
-				<ContactForm />
-			</section>
-		</div>
+			<ContactForm />
+		</main>
 	);
 }

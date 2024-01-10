@@ -12,7 +12,7 @@ export default function Navbar() {
 	}
 
 	return (
-		<nav className="relative w-full  ">
+		<nav className="relative w-full pt-4 px-10 md:px-24  max-w-[1440px] mx-auto">
 			<div className="flex items-center justify-between  text-shadow shadow-black">
 				<Link href="/">
 					<div className="flex items-center">
