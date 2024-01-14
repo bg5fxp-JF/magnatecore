@@ -6,7 +6,7 @@ export default function Services() {
 	return (
 		<section
 			id="services"
-			className=" flex min-h-screen   flex-col items-center  py-14 px-10 md:px-24 "
+			className=" flex   flex-col items-center  py-14 px-10 md:px-24 "
 		>
 			<div className="flex flex-col items-center justify-center gap-y-10 text-center">
 				<div className="flex flex-col gap-y-2">

@@ -38,9 +38,9 @@ export const ContactForm = () => {
 	return (
 		<section
 			id="contact"
-			className="flex min-h-screen  flex-col items-center  py-14 px-10 md:px-24 bg-black"
+			className="flex max-h-full min-h-screen flex-col items-center  py-14 px-10 md:px-24 bg-black"
 		>
-			<div className="flex flex-col sm:flex-row items-start justify-center gap-5">
+			<div className="flex flex-col md:flex-row items-start justify-center gap-5">
 				<div className="flex flex-col gap-3 text-white">
 					<h1 className="font-Poppins text-4xl md:text-6xl font-bold ">
 						Get in touch with us
@@ -62,7 +62,7 @@ export const ContactForm = () => {
 				</div>
 				<div className="flex flex-col mx-auto items-center justify-center text-center font-Poppins w-full">
 					<form
-						className="flex w-full md:w-[500px] rounded-lg    flex-col space-y-10  bg-gray-100  p-5"
+						className="flex w-full max-w-[500px] mx-auto rounded-lg    flex-col space-y-10  bg-gray-100  p-10"
 						onSubmit={handleSubmit}
 					>
 						<h1 className="font-Poppins text-4xl md:text-6xl font-bold ">

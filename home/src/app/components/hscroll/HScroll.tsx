@@ -43,13 +43,13 @@ export default function HScroll() {
 			<div ref={triggerRef}>
 				<div
 					ref={sectionRef}
-					className="min-h-screen flex flex-row relative w-[400vw]  md:px-20"
+					className=" flex flex-row relative w-[400vw]  md:px-20"
 				>
 					{ctaData.map(
 						({ side, title, desc, img, btn, btnTitle, btnSub }: any) => {
 							return (
 								<AnimateBlock>
-									<div className="flex items-center justify-center h-screen w-screen md:w-[50vw]">
+									<div className="flex items-center justify-center h-screen  w-screen md:w-[50vw] ">
 										<ImgText
 											side="left"
 											img={img}

@@ -1,8 +1,5 @@
 import Navbar from "./components/Navbar";
 import "./globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
 	title: "Magnate Core",
@@ -17,7 +14,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body>
 				<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
 				<script
 					src="https://mediafiles.botpress.cloud/fb3dd301-596d-4403-8522-6aa896d55f92/webchat/config.js"

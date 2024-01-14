@@ -40,13 +40,13 @@ export default function Home() {
 		})();
 	}, []);
 	return (
-		<main className=" font-Poppins h-screen ">
+		<main>
 			<AnimatePresence mode="wait">
 				{isLoading && <Preloader />}
 			</AnimatePresence>
-			<section className="flex min-h-screen flex-col text-center xls:text-left items-center gap-y-12  py-10 px-10 md:px-24 ">
-				<AnimationMain />
-			</section>
+
+			<AnimationMain />
+
 			{isBelow768 ? <HScrollMobile /> : <HScroll />}
 
 			<Services />

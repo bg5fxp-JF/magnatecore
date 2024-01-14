@@ -18,7 +18,6 @@
 }
 
 body {
-	height: 800vh;
 	background: linear-gradient(
 		to bottom,
 		rgb(var(--background-start-rgb)),
