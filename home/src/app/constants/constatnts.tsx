@@ -1,7 +1,7 @@
 export const servicesData = [
 	{
 		link: "",
-		name: "Strategic Digital Alliance",
+		name: "HELLO",
 		desc: "Beyond a service provider, we position ourselves as your strategic ally in the digital ascent.",
 
 		icon: "trend",
