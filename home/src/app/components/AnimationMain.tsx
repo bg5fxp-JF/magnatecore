@@ -22,21 +22,17 @@ export default function AnimationMain() {
 							Magnate Core
 						</h1>
 					</div>
-					<h2 className="font-Poppins opacity-50 text-lg font-light mt-10">
-						Pioneering the Future of Digital Excellence
+					<h2 className="font-Poppins opacity-75 text-2xl font-light mt-10">
+						<b>Marketing is crucial...</b>, <br />
+						<br /> ...but with a never-ending to-do list, it can feel overwhelmingly impossible.
 					</h2>
 				</div>
 
 				<div className="flex flex-col mt-10 mx-auto items-center text-center w-full   ">
 					<div className=" xls:min-h-[500px] max-w-[900px] font-Poppins  flex justify-center items-center flex-col group rounded-lg border border-transparent px-5 py-4 transition-colors border-gray-300 bg-gray-100 ">
-						<p className={`text-sm lg:text-reg opacity-50`}>
-							In the intricate tapestry of the digital landscape, brands compete
-							for a moment in the spotlight. Yet, many remain obscured, their
-							potential stifled. Confront the chilling reality of unmet metrics,
-							the stark contrast of stagnant sales against the morning's first
-							brew, and the persistent weight of unrealised aspirations. <br />
-							<br /> Unveil the AI-powered strategy propelling businesses to
-							unparalleled digital prominence.
+						<p className={`text-sm lg:text-reg opacity-100`}>
+							MORE ATTRACTION, MORE GROWTH, MORE WEALTH. <br />
+							<br /> GUARANTEED.
 						</p>
 
 						<Link
@@ -46,10 +42,10 @@ export default function AnimationMain() {
 							<button className="mt-10 shadow  mx-auto bg-black text-white p-3 rounded-full">
 								<div className="flex flex-col items-center px-5">
 									<p className="text-sm md:text-reg font-semibold">
-										Prepared for Evolution?
+										I WANT TO GROW!
 									</p>
 									<p className="font-light text-2xsm md:text-xsm opacity-75">
-										Engage with Magnate Core
+										Be More with Magnate Core
 									</p>
 								</div>
 							</button>

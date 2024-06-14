@@ -12,7 +12,7 @@ export default function Services() {
 				<div className="flex flex-col gap-y-2">
 					<h1 className="font-Poppins text-sm font-light">Our Services</h1>
 					<h1 className="font-Poppins text-4xl md:text-6xl font-bold ">
-						Design that solves problems, one product at a time.
+						"OK... So What Makes You So Different?"
 					</h1>
 				</div>
 				{/* <div className="w-[30%] h-1  bg-black mt-1  shadow-sm"></div> */}
