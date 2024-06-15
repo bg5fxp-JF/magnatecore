@@ -43,13 +43,20 @@ export default function HScrollMobile() {
 			<div ref={triggerRef}>
 				<div
 					ref={sectionRef}
-					className="min-h-screen flex flex-row relative w-[400vw]  md:px-20"
+					className="min-h-screen flex flex-row relative w-[300vw]  md:px-20"
 				>
 					{ctaData.map(
-						({ side, title, desc, img, btn, btnTitle, btnSub }: any) => {
+						({ side, title, desc, img, bg, btn, btnTitle, btnSub }: any) => {
 							return (
-								<AnimateBlock>
-									<div className="flex items-center justify-center h-screen w-screen">
+								<div
+									className="flex items-center justify-center h-screen w-screen px-5"
+									style={{
+										backgroundImage: `url(${bg})`,
+										backgroundSize: "cover",
+										boxShadow: "inset 0 0 175px 75px black",
+									}}
+								>
+									<AnimateBlock>
 										<ImgText
 											side={side}
 											img={img}
@@ -59,8 +66,8 @@ export default function HScrollMobile() {
 											btnTitle={btnTitle}
 											btnSub={btnSub}
 										/>
-									</div>
-								</AnimateBlock>
+									</AnimateBlock>
+								</div>
 							);
 						}
 					)}

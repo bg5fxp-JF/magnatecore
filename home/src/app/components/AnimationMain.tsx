@@ -1,7 +1,8 @@
-// "use client";
+"use client";
 
 // import { motion } from "framer-motion";
 // import { slideInFromTop } from "../utils/motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function AnimationMain() {
@@ -22,18 +23,15 @@ export default function AnimationMain() {
 							Magnate Core
 						</h1>
 					</div>
-					<h2 className="font-Poppins opacity-75 text-2xl font-light mt-10">
-						<b>Marketing is crucial...</b>, <br />
-						<br /> ...but with a never-ending to-do list, it can feel overwhelmingly impossible.
-					</h2>
 				</div>
 
 				<div className="flex flex-col mt-10 mx-auto items-center text-center w-full   ">
-					<div className=" xls:min-h-[500px] max-w-[900px] font-Poppins  flex justify-center items-center flex-col group rounded-lg border border-transparent px-5 py-4 transition-colors border-gray-300 bg-gray-100 ">
-						<p className={`text-sm lg:text-reg opacity-100`}>
+					<div className="  max-w-[900px] font-Poppins  flex justify-center items-center flex-col group rounded-lg border border-transparent p-5 transition-colors border-gray-300 bg-gray-100 ">
+						<h2 className={`text-3xl md:text-4xl font-bold `}>
 							MORE ATTRACTION, MORE GROWTH, MORE WEALTH. <br />
-							<br /> GUARANTEED.
-						</p>
+							<br />{" "}
+							<span className="text-red-500 animate-pulse ">GUARANTEED.</span>
+						</h2>
 
 						<Link
 							href="#contact"
@@ -41,7 +39,7 @@ export default function AnimationMain() {
 						>
 							<button className="mt-10 shadow  mx-auto bg-black text-white p-3 rounded-full">
 								<div className="flex flex-col items-center px-5">
-									<p className="text-sm md:text-reg font-semibold">
+									<p className="text-lg md:text-2xl font-semibold">
 										I WANT TO GROW!
 									</p>
 									<p className="font-light text-2xsm md:text-xsm opacity-75">
@@ -52,6 +50,22 @@ export default function AnimationMain() {
 						</Link>
 					</div>
 				</div>
+
+				<h2 className="font-Poppins text-3xl md:text-4xl font-bold opacity-75  mt-10">
+					<motion.span
+						initial={{ opacity: 0, y: -500 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ delay: 1 }}
+					>
+						Marketing is crucial...
+					</motion.span>
+					<br />
+					<span className="text-2xl md:text-3xl font-light">
+						...but with a never-ending to-do list,
+						<br /> it can feel overwhelmingly impossible.
+					</span>
+					<br />
+				</h2>
 			</div>
 		</section>
 	);

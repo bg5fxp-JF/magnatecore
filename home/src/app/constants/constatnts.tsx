@@ -29,6 +29,7 @@ export const ctaData = [
 	{
 		side: "left",
 		img: "images/clock.png",
+		bg: "images/4.png",
 		title: "DIY MARKETING?",
 		desc: "Taking on marketing yourself may seem like a cost-saving option. But without expertise, it often leads to frustration, wasted time, and subpar results.",
 		btn: false,
@@ -38,6 +39,7 @@ export const ctaData = [
 	{
 		side: "right",
 		img: "images/staff.png",
+		bg: "images/5.png",
 		title: "NEW STAFF?",
 		desc: "Finding the right talent is tough /nl Training and onboarding new employees is expensive. /nl And even if you hire the ideal candidate... you're still relying on just one person!",
 		btn: true,
@@ -47,6 +49,7 @@ export const ctaData = [
 	{
 		side: "left",
 		img: "images/warning.png",
+		bg: "images/6.png",
 		title: "HIRE AN AGENCY",
 		desc: "Without a hefty marketing budget, your account will end up with an inexperienced intern.",
 		btn: false,

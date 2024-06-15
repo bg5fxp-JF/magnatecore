@@ -22,8 +22,10 @@ export default function ServiceCards({ link, name, desc, icon }: any) {
 			<div className="flex items-center justify-center p-2 mb-5 bg-black rounded-md ">
 				{iconMapping[icon] && <Icon fill="white" size={30} />}
 			</div>
-			<h2 className="mb-3 w-full text-2xl font-semibold text-center">{name}</h2>
-			<p className="m-0 w-full text-sm  text-center">{desc}</p>
+			<h2 className="mb-3 w-full text-3xl md:text-4xl font-semibold text-center">
+				{name}
+			</h2>
+			<p className="m-0 w-full text-lg text-opacity-75  text-center">{desc}</p>
 		</div>
 	);
 }

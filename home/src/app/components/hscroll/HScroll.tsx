@@ -20,7 +20,7 @@ export default function HScroll() {
 				translateX: 0,
 			},
 			{
-				translateX: "-65vw",
+				translateX: "-50vw",
 				ease: "none",
 				duration: 1,
 				scrollTrigger: {
@@ -41,15 +41,19 @@ export default function HScroll() {
 	return (
 		<section className="overflow-hidden">
 			<div ref={triggerRef}>
-				<div
-					ref={sectionRef}
-					className=" flex flex-row relative w-[400vw]  md:px-20"
-				>
+				<div ref={sectionRef} className=" flex flex-row relative w-[150vw]  ">
 					{ctaData.map(
-						({ side, title, desc, img, btn, btnTitle, btnSub }: any) => {
+						({ side, title, desc, img, bg, btn, btnTitle, btnSub }: any) => {
 							return (
-								<AnimateBlock>
-									<div className="flex items-center justify-center h-screen  w-screen md:w-[50vw] ">
+								<div
+									className="flex items-center justify-center h-screen px-5  w-screen md:w-[50vw]"
+									style={{
+										backgroundImage: `url(${bg})`,
+										backgroundSize: "cover",
+										boxShadow: "inset 0 0 175px 75px black",
+									}}
+								>
+									<AnimateBlock>
 										<ImgText
 											side="left"
 											img={img}
@@ -59,8 +63,8 @@ export default function HScroll() {
 											btnTitle={btnTitle}
 											btnSub={btnSub}
 										/>
-									</div>
-								</AnimateBlock>
+									</AnimateBlock>
+								</div>
 							);
 						}
 					)}

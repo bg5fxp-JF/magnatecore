@@ -45,12 +45,12 @@ export const ContactForm = () => {
 					<h1 className="font-Poppins text-4xl md:text-6xl font-bold ">
 						Get in touch with us
 					</h1>
-					<h1 className="font-Poppins text-sm font-light  ">
+					<h1 className="font-Poppins text-lg font-light  ">
 						Have questions, ideas, or feedback? We'd love to hear from you!
 						Reach out to us anytime and we'll get back to you as soon as
 						possible.
 					</h1>
-					<h1 className="font-Poppins text-sm font-light  ">
+					<h1 className="font-Poppins text-lg font-light  ">
 						Fill in the form or{" "}
 						<Link
 							className=" transition-all hover:underline hover:font-bold "

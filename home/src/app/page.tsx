@@ -51,7 +51,7 @@ export default function Home() {
 
 			<Services />
 
-			{isBelow768 ? <HScroll1Mobile /> : <HScroll1 />}
+			{/* {isBelow768 ? <HScroll1Mobile /> : <HScroll1 />} */}
 
 			<ContactForm />
 		</main>
