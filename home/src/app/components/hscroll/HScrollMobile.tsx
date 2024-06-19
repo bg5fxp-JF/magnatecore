@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import AnimateBlock from "../AnimateBlock";
 import ImgText from "../ImgText";
-import { ctaData } from "@/app/constants/constatnts";
+import { ctaData } from "@/app/constants/constants";
 
 export default function HScrollMobile() {
 	const sectionRef = useRef(null);

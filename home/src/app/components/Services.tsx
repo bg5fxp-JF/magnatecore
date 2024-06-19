@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { servicesData } from "../constants/constatnts";
+import { servicesData } from "../constants/constants";
 import AnimateBlock from "./AnimateBlock";
 import ServiceCards from "./ServiceCards";
 

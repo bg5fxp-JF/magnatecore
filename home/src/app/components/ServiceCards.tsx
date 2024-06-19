@@ -5,6 +5,7 @@ import {
 	PiTrendUp,
 	PiFootprintsFill,
 } from "react-icons/pi";
+import { splitLinesForParagraphs } from "../utils";
 
 export default function ServiceCards({ link, name, desc, icon }: any) {
 	const iconMapping: any = {
@@ -25,7 +26,7 @@ export default function ServiceCards({ link, name, desc, icon }: any) {
 			<h2 className="mb-3 w-full text-3xl md:text-4xl font-semibold text-center">
 				{name}
 			</h2>
-			<p className="m-0 w-full text-lg text-opacity-75  text-center">{desc}</p>
+			{splitLinesForParagraphs(desc)}
 		</div>
 	);
 }

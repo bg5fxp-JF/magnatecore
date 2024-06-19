@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { splitLinesForParagraphs } from "../utils";
 
 export default function ImgText({
 	side,
@@ -18,7 +19,7 @@ export default function ImgText({
 			/> */}
 			<div className={` text-center mt-4 p-7 bg-gray-100  rounded-lg`}>
 				<h2 className={`mb-3 text-4xl font-semibold`}>{title}</h2>
-				<p className={`m-0 max-w-[40ch] text-lg opacity-75`}>{desc}</p>
+				{splitLinesForParagraphs(desc)}
 
 				{btn ? (
 					<Link

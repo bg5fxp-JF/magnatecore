@@ -1,6 +1,7 @@
 "use client";
-import { projData } from "../constants/constants";
+
 import ProjCard from "../components/ProjCard";
+import { projData } from "../constants/constants";
 
 export default function Projects() {
 	return (

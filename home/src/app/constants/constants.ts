@@ -2,14 +2,14 @@ export const servicesData = [
 	{
 		link: "",
 		name: "WIN - WIN",
-		desc: "Our success is tied to yours. That's what GUARANTEES a true partnership. /nl You won't bear all the risk; we'll share it with you.",
+		desc: "Our success is tied to yours. That's what GUARANTEES a true partnership. \n\n  You won't bear all the risk; we'll share it with you.",
 
 		icon: "trend",
 	},
 	{
 		link: "",
 		name: "PRIORITIES IN ORDER",
-		desc: "Our main goal is delivering results. /nl Less talk, more action.",
+		desc: "Our main goal is delivering results. \n\n  Less talk, more action.",
 		icon: "calculator",
 	},
 	{
@@ -41,7 +41,9 @@ export const ctaData = [
 		img: "images/staff.png",
 		bg: "images/5.png",
 		title: "NEW STAFF?",
-		desc: "Finding the right talent is tough /nl Training and onboarding new employees is expensive. /nl And even if you hire the ideal candidate... you're still relying on just one person!",
+		desc: `Finding the right talent is tough.
+		 \n\n 
+		Training and onboarding new employees is expensive.  And even if you hire the ideal candidate... you're still relying on just one person!`,
 		btn: true,
 		btnTitle: "I WANT TO GROW!",
 		btnSub: "Get in touch with Magnate Core",
@@ -63,7 +65,7 @@ export const ctaData2 = [
 		side: "right",
 		img: "images/4.png",
 		title: "MARKETING FATIGUE?",
-		desc: "Constantly juggling marketing tasks can lead to burnout. /nl It’s exhausting to keep up with trends, algorithms, and strategies on top of running your practice.",
+		desc: "Constantly juggling marketing tasks can lead to burnout. \n\n  It’s exhausting to keep up with trends, algorithms, and strategies on top of running your practice.",
 		btn: true,
 		btnTitle: "Embark on the Journey",
 		btnSub: "Commence Your Partnership ",
@@ -72,7 +74,7 @@ export const ctaData2 = [
 		side: "left",
 		img: "images/5.png",
 		title: "MISSED OPPORTUNITIES?",
-		desc: "Without a focused marketing strategy, you’re likely missing out on potential clients. /nl Every missed opportunity is a lost chance to grow your business and revenue.",
+		desc: "Without a focused marketing strategy, you’re likely missing out on potential clients. \n\n  Every missed opportunity is a lost chance to grow your business and revenue.",
 		btn: false,
 		btnTitle: "",
 		btnSub: "",
@@ -81,7 +83,7 @@ export const ctaData2 = [
 		side: "right",
 		img: "images/6.png",
 		title: "COMPETITORS EDGE?",
-		desc: "Your competitors are likely investing in professional marketing. /nl Falling behind means losing clients to them, making it harder to stay afloat and thrive.",
+		desc: "Your competitors are likely investing in professional marketing. \n\n  Falling behind means losing clients to them, making it harder to stay afloat and thrive.",
 		btn: true,
 		btnTitle: "I'M READY!",
 		btnSub: "Speak with Magnate Core",
